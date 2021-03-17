@@ -4,11 +4,11 @@ from player_reader import PlayerReader
 
 def main():
     stats = Statistics(PlayerReader("https://nhlstatisticsforohtu.herokuapp.com/players.txt"))
-    philadelphia_flyers_players = stats.team("PHI")
-    top_scorers = stats.top_scorers(10)
+    caroline_flyers_players = stats.team("CAR")
+    top_scorers = stats.top_scorers(20)
 
-    print("Philadelphia Flyers:")
-    for player in philadelphia_flyers_players:
+    print("Caroline Hurricanes:")
+    for player in caroline_flyers_players:
         print(player)
 
     print("Top scorers:")
