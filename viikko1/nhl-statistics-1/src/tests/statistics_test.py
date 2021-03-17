@@ -28,17 +28,14 @@ class TestStatistics(unittest.TestCase):
 
     def test_team(self):
         pitts_players = self.stats.team("EDM")
-
         self.assertEqual(pitts_players[0].name, "Semenko")
 
 
     def test_search(self):
         player = self.stats.search("Kurri")
-
         self.assertEqual(player.name, "Kurri")
 
 
     def test_search_none(self):
         player = self.stats.search("Tikkanen")
-
         self.assertEqual(player, None)
