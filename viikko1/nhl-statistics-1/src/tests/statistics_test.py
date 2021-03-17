@@ -38,4 +38,5 @@ class TestStatistics(unittest.TestCase):
 
     def test_search_none(self):
         player = self.stats.search("Tikkanen")
+
         self.assertEqual(player, None)
