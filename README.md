@@ -1,3 +1,3 @@
 # ohtu-tehtavat
 
-https://github.com/lautanal/ohtu-tehtavat/workflows/CI/badge.svg
+![Github Actions](https://github.com/lautanal/ohtu-tehtavat/workflows/CI/badge.svg)
