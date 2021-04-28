@@ -5,22 +5,6 @@ class All:
     def matches(self, player):
         return True
 
-class QueryBuilder:
-    def __init__(self, pino):
-        self._pino = pino
-    
-    def build(self):
-        return self._pino
-
-    def playsIn(self, team):
-        return QueryBuilder(PlaysIn(team))
-
-    def hasAtLeast(self, value, attr):
-        return QueryBuilder(HasAtLeast(value, attr))
-
-    def andC(self, *matchers):
-        return QueryBuilder(And(*matchers))
-
 class And:
     def __init__(self, *matchers):
         self._matchers = matchers
