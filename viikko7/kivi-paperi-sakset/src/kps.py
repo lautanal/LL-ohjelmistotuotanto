@@ -34,20 +34,20 @@ class KPS:
 
 class KPSTekoaly(KPS):
     def __init__(self):
-        self.tekoaly1 = Tekoaly()
+        self.tekoaly = Tekoaly()
 
     def _tokan_siirto(self, siirto):
-        tokan_siirto = self.tekoaly1.anna_siirto()
+        tokan_siirto = self.tekoaly.anna_siirto()
         print(f"Toisen pelaajan siirto: {tokan_siirto}")
         return tokan_siirto
 
 class KPSParempiTekoaly(KPS):
     def __init__(self):
-        self.tekoaly2 = TekoalyParannettu(10)
+        self.tekoaly = TekoalyParannettu(10)
 
     def _tokan_siirto(self, siirto):
-        tokan_siirto = self.tekoaly2.anna_siirto()
-        self.tekoaly2.aseta_siirto(siirto)
+        tokan_siirto = self.tekoaly.anna_siirto()
+        self.tekoaly.aseta_siirto(siirto)
         print(f"Toisen pelaajan siirto: {tokan_siirto}")
         return tokan_siirto
 
